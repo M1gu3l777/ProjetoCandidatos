@@ -20,7 +20,6 @@ public class Sorts<T extends Comparable<T>> {
                 }
             }
 
-            // Se não houve troca, já está ordenado
             if (!trocou) {
                 break;
             }
