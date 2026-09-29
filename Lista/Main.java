@@ -15,7 +15,6 @@ public class Main {
 
             String linha;
 
-            // Pula o cabeçalho: nome,nota
             br.readLine();
 
             while ((linha = br.readLine()) != null) {
@@ -46,9 +45,6 @@ public class Main {
 
         Candidato[] candidatos = lista.toArray(new Candidato[0]);
 
-        // -------------------------------
-        // ANTES DA ORDENAÇÃO
-        // -------------------------------
 
         System.out.println("===== ANTES DA ORDENAÇÃO =====");
 
@@ -56,17 +52,11 @@ public class Main {
             System.out.println(candidato);
         }
 
-        // -------------------------------
-        // ORDENAÇÃO
-        // -------------------------------
 
         Sorts<Candidato> sorts = new Sorts<>();
 
         sorts.bubbleSort(candidatos);
 
-        // -------------------------------
-        // DEPOIS DA ORDENAÇÃO
-        // -------------------------------
 
         System.out.println("\n===== CANDIDATOS CLASSIFICADOS =====");
 
