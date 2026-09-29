@@ -19,7 +19,6 @@ public class Candidato implements Comparable<Candidato> {
     @Override
     public int compareTo(Candidato outro) {
 
-        // Nota em ordem decrescente
         if (this.nota > outro.nota) {
             return -1;
         }
@@ -28,7 +27,6 @@ public class Candidato implements Comparable<Candidato> {
             return 1;
         }
 
-        // Empate na nota: nome em ordem alfabética
         return this.nome.compareToIgnoreCase(outro.nome);
     }
 
